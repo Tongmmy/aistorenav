@@ -5,142 +5,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AI 会员商家导航 | 精选列表</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <style>
+        .open-all-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            margin-top: 12px;
+            padding: 8px 16px;
+            background-color: var(--accent-color);
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 14px;
+            font-family: var(--font-stack);
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+        .open-all-btn:hover { opacity: 0.85; }
+    </style>
 </head>
 <body>
 
     <div class="container">
-        <!-- 头部信息 -->
         <header class="header">
             <h1>AI 会员商家服务矩阵</h1>
-            <p>已收录 11 个优选站点，点击直接访问。</p>
+            <p>已收录 18 个优选站点，点击直接访问。</p>
+            <button class="open-all-btn" onclick="openAll()">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+                一键打开全部
+            </button>
         </header>
 
-        <!-- 导航列表块 -->
         <div class="nav-list">
-            
-            <!-- Item 1 -->
+
             <a href="https://nikoers.com/" target="_blank" class="nav-item">
                 <div class="item-info">
                     <span class="item-name"><span class="status-dot"></span>Nikoers</span>
                     <span class="item-url">https://nikoers.com/</span>
                 </div>
-                <div class="item-action">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
             </a>
 
-            <!-- Item 2 -->
             <a href="https://tehuio.com/cat/2" target="_blank" class="nav-item">
                 <div class="item-info">
                     <span class="item-name"><span class="status-dot"></span>Tehuio (Cat 2)</span>
                     <span class="item-url">https://tehuio.com/cat/2</span>
                 </div>
-                <div class="item-action">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
             </a>
 
-            <!-- Item 3 -->
+            <a href="https://tehuio.com/?from=1" target="_blank" class="nav-item">
+                <div class="item-info">
+                    <span class="item-name"><span class="status-dot"></span>Tehuio (from=1)</span>
+                    <span class="item-url">https://tehuio.com/?from=1</span>
+                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+            </a>
+
             <a href="https://a1gmail.com/" target="_blank" class="nav-item">
                 <div class="item-info">
                     <span class="item-name"><span class="status-dot"></span>A1Gmail</span>
                     <span class="item-url">https://a1gmail.com/</span>
                 </div>
-                <div class="item-action">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
             </a>
 
-            <!-- Item 4 -->
             <a href="https://shop.bmoplus.com/#shop" target="_blank" class="nav-item">
                 <div class="item-info">
                     <span class="item-name"><span class="status-dot"></span>BmoPlus Shop</span>
                     <span class="item-url">https://shop.bmoplus.com/#shop</span>
                 </div>
-                <div class="item-action">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
             </a>
 
-            <!-- Item 5 -->
             <a href="https://gmailgood.com/" target="_blank" class="nav-item">
                 <div class="item-info">
                     <span class="item-name"><span class="status-dot"></span>GmailGood</span>
                     <span class="item-url">https://gmailgood.com/</span>
                 </div>
-                <div class="item-action">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
             </a>
 
-            <!-- Item 6 -->
             <a href="https://gmail1888.com/" target="_blank" class="nav-item">
                 <div class="item-info">
                     <span class="item-name"><span class="status-dot"></span>Gmail1888</span>
                     <span class="item-url">https://gmail1888.com/</span>
                 </div>
-                <div class="item-action">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
             </a>
 
-            <!-- Item 7 -->
             <a href="https://shihuiai.cn/" target="_blank" class="nav-item">
                 <div class="item-info">
                     <span class="item-name"><span class="status-dot"></span>实惠 AI (ShihuiAI)</span>
                     <span class="item-url">https://shihuiai.cn/</span>
                 </div>
-                <div class="item-action">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
             </a>
 
-            <!-- Item 8 -->
             <a href="https://douyiner.cn/" target="_blank" class="nav-item">
                 <div class="item-info">
                     <span class="item-name"><span class="status-dot"></span>Douyiner</span>
                     <span class="item-url">https://douyiner.cn/</span>
                 </div>
-                <div class="item-action">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
             </a>
 
-            <!-- Item 9 -->
             <a href="https://xxxyan.cc/" target="_blank" class="nav-item">
                 <div class="item-info">
                     <span class="item-name"><span class="status-dot"></span>Xxxyan</span>
                     <span class="item-url">https://xxxyan.cc/</span>
                 </div>
-                <div class="item-action">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
             </a>
 
-            <!-- Item 10 -->
             <a href="https://m.ifaka.cloud/" target="_blank" class="nav-item">
                 <div class="item-info">
                     <span class="item-name"><span class="status-dot"></span>iFaka Cloud</span>
                     <span class="item-url">https://m.ifaka.cloud/</span>
                 </div>
-                <div class="item-action">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
-                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
             </a>
 
-            <!-- Item 11 -->
             <a href="https://sd.ncet.top/" target="_blank" class="nav-item">
                 <div class="item-info">
                     <span class="item-name"><span class="status-dot"></span>NCET</span>
                     <span class="item-url">https://sd.ncet.top/</span>
                 </div>
-                <div class="item-action">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+            </a>
+
+            <a href="https://fe.dtyuedan.cn/shop/buy" target="_blank" class="nav-item">
+                <div class="item-info">
+                    <span class="item-name"><span class="status-dot"></span>Dtyuedan Shop</span>
+                    <span class="item-url">https://fe.dtyuedan.cn/shop/buy</span>
                 </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+            </a>
+
+            <a href="https://yh-mo.xyz/" target="_blank" class="nav-item">
+                <div class="item-info">
+                    <span class="item-name"><span class="status-dot"></span>YH-MO</span>
+                    <span class="item-url">https://yh-mo.xyz/</span>
+                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+            </a>
+
+            <a href="https://nf.video/" target="_blank" class="nav-item">
+                <div class="item-info">
+                    <span class="item-name"><span class="status-dot"></span>NF Video</span>
+                    <span class="item-url">https://nf.video/</span>
+                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+            </a>
+
+            <a href="https://www.aivora.cn/" target="_blank" class="nav-item">
+                <div class="item-info">
+                    <span class="item-name"><span class="status-dot"></span>Aivora</span>
+                    <span class="item-url">https://www.aivora.cn/</span>
+                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+            </a>
+
+            <a href="https://shop.nitro.xin/" target="_blank" class="nav-item">
+                <div class="item-info">
+                    <span class="item-name"><span class="status-dot"></span>Nitro Shop</span>
+                    <span class="item-url">https://shop.nitro.xin/</span>
+                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
+            </a>
+
+            <a href="https://makerich.club/" target="_blank" class="nav-item">
+                <div class="item-info">
+                    <span class="item-name"><span class="status-dot"></span>MakeRich</span>
+                    <span class="item-url">https://makerich.club/</span>
+                </div>
+                <div class="item-action"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></div>
             </a>
 
         </div>
     </div>
+
+    <script>
+        function openAll() {
+            document.querySelectorAll('.nav-item').forEach(a => window.open(a.href, '_blank'));
+        }
+    </script>
 
 </body>
 </html>
